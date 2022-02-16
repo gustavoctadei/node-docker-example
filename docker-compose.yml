@@ -1,0 +1,9 @@
+version: "3"
+services:
+  node-docker-example:
+    image: "node:17.5.0"
+    command: "node /opt/app/server.js"
+    ports:
+      - "8180:8080"
+    volumes:
+      - ./app:/opt/app
